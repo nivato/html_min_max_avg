@@ -91,7 +91,7 @@ div {
 .add-bar {
 	background: rgba(0, 107, 0, 0.2);
 	width: 300px;
-	height: 50px;
+	height: 70px;
 	margin-top: 0px;
 	margin-left: auto;
 	margin-right: auto;
@@ -100,6 +100,32 @@ div {
 	-webkit-border-radius:	0px 0px 8px 8px;
 	-moz-border-radius:		0px 0px 8px 8px;
 	border-radius:			0px 0px 8px 8px;
+}
+
+.input-wrapper {
+	width: 185px;
+	float: left;
+	margin: 15px;
+}
+
+#input-field {
+	width: 180px;
+	font-size: 14px;
+}
+
+.error-message {
+	height: 20px;
+	font-size: 14px;
+	color: red;
+	font-weight: normal;
+	line-height: 20px;
+}
+
+#add-button {
+	float: left;
+	margin-top: 15px;
+	height: 24px;
+	width: 70px;
 }
 
 .digit-wrapper {

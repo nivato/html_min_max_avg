@@ -3,8 +3,11 @@ var arrayOfDigits = [];
 function add_number(){
     var input_field = $('#input-field');
     var enteredNumbers = input_field.val().split(' ');
+    $('.error-message').text(' ');
     for (var i = 0; i < enteredNumbers.length; i++) {
-        if (!isNaN(enteredNumbers[i])){
+        if (isNaN(parseInt(enteredNumbers[i]))){
+            $('.error-message').text('Invalid number entered');
+        } else {
             var digit_div = jQuery('<div/>', {class: 'digit'});
             digit_div.text(enteredNumbers[i]);
             $('.digit-wrapper').append(digit_div);
